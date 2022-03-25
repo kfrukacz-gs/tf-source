@@ -28,6 +28,11 @@ variable "secret_key" {
   description = "Secret key for AWS"
 }
 
+variable "session_token" {
+  type = string
+  description = "Session token for AWS"
+}
+
 variable "aws_amis" {
   type = map(string)
   default = {
